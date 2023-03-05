@@ -56,7 +56,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: kirill31337/infra_action:latest
+          tags: kirill31337/infra_action:v.1.7
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
